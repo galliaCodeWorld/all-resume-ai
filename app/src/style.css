@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body,
+html {
+  @apply h-full;
+  @apply scroll-smooth;
+  @apply bg-white;
+  font-family: "Inter", sans-serif;
+}
+
+textarea,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  @apply outline-inherit;
+}
+
+:disabled {
+  @apply opacity-50;
+  @apply select-none;
+  @apply pointer-events-none;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.material-symbols-rounded.thin {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48;
+}
+
+.material-symbols-rounded.filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
