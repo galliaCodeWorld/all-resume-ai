@@ -1,6 +1,4 @@
 <script>
-  import { writable } from "svelte/store";
-
   let primaryColor = "#313e50";
   let secondaryColor = "#8fb2e5";
   import { resume } from "../Store";
@@ -20,10 +18,10 @@
       <header class="p-4 py-4 bg-slate-700">
         <div class="max-w-xs">
           <h1 class="!text-3xl font-bold text-white mb-0.5 uppercase">
-            {$resume.contact.fullName}
+            {$resume.contact.fullName || `Yurii Darahan`}
           </h1>
           <p class="text-white uppercase font-semibold !text-sm leading-snug">
-            WORK, HEALTH AND SAFETY COORDINATOR | WHS OFFICER
+            {$resume.title || `WORK, HEALTH AND SAFETY COORDINATOR | WHS OFFICER`}
           </p>
         </div>
       </header>
@@ -39,7 +37,7 @@
 
           <div class="p-4 pt-3">
             <p class="text-sm whitespace-pre-line font-semibold leading-snug">
-              {`Reliable, adaptable, detail-focused, and safety-oriented Work, Health and Safety professional with over 9 years of experience. Offering proven leadership capacity with a strong focus on safety, wellbeing, and quality assurance; established and maintained a solid track record of success in ensuring safety and regulatory compliance, quality control, design, planning, development, and project management. \n\n Recognised as a strong leader and a high achiever, consistently completing projects on time and under budget. Committed to delivering first-rate WHS support, accurate data analysis and proficient quality assurance in accordance with organisational objectives. \n\n Developed outstanding communication skills, leveraging abilities to build and maintain productive professional relationships with a range of stakeholders from all levels and with diverse cultural backgrounds.`}
+              {$resume.summary || `Reliable, adaptable, detail-focused, and safety-oriented Work, Health and Safety professional with over 9 years of experience. Offering proven leadership capacity with a strong focus on safety, wellbeing, and quality assurance; established and maintained a solid track record of success in ensuring safety and regulatory compliance, quality control, design, planning, development, and project management. \n\n Recognised as a strong leader and a high achiever, consistently completing projects on time and under budget. Committed to delivering first-rate WHS support, accurate data analysis and proficient quality assurance in accordance with organisational objectives. \n\n Developed outstanding communication skills, leveraging abilities to build and maintain productive professional relationships with a range of stakeholders from all levels and with diverse cultural backgrounds.`}
             </p>
           </div>
         </section>
@@ -142,12 +140,12 @@
 
           <ul class="text-white list-disc ml-4 flex flex-col gap-1 px-2">
             <li class=" font-bold">
-              17A BINGARA ROAD, MACQUARIE FIELDS NSW 2564
+              {$resume.contact.address || `Braniborska 50/90, 53-680 Stare Miasto, Wroclaw, Poland`}
             </li>
 
-            <li class="font-bold">0415 707 657</li>
-            <li class="">rajeshdchavan@yahoo.com.au</li>
-            <li class="">www.linkedin.com/in/rajesh-chavan</li>
+            <li class="font-bold">{$resume.contact.phone || `+1 323 801 8431`}</li>
+            <li class="">{$resume.contact.email || `hperfomance@gmail.com`}</li>
+            <li class="">{$resume.contact.linkedInUrl || `https://www.linkedin.com/in/williamhgates`}</li>
           </ul>
         </li>
       </ul>

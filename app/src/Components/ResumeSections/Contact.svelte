@@ -20,22 +20,22 @@
   </div>
 
   <div class="flex items-start gap-4 w-full">
-    <Input bind:value="{$resume.phone}" label="Phone Number" type="phone" />
-    <Input bind:value="{$resume.email}" label="Email Address" type="email" />
+    <Input bind:value="{$resume.contact.phone}" label="Phone Number" type="phone" />
+    <Input bind:value="{$resume.contact.email}" label="Email Address" type="email" />
   </div>
 
   <div>
-    <Input bind:value="{$resume.address}" label="Address" type="address" />
+    <Input bind:value="{$resume.contact.address}" label="Address" type="address" />
   </div>
 
   <div class="flex items-start gap-4 w-full">
     <Input
-      bind:value="{$resume.linkedInUrl}"
+      bind:value="{$resume.contact.linkedInUrl}"
       label="LinkedIn URL"
       placeholder="Enter your LinkedIn profile URL" />
 
     <Input
-      bind:value="{$resume.websiteLink}"
+      bind:value="{$resume.contact.websiteUrl}"
       label="Personal Website"
       placeholder="Enter your Website link" />
   </div>
