@@ -1,3 +1,7 @@
 node_modules/
 *.log
 .DS_Store
+
+app/package-lock.json
+app/src/Firebase/config.json
+functions/package-lock.json

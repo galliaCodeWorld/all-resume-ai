@@ -19,7 +19,7 @@ export const storage = getStorage();
 export const functions = getFunctions(app);
 
 if (import.meta.env.MODE.match("development")) {
-  connectFirestoreEmulator(db, "localhost", 8080);
+  connectFirestoreEmulator(db, "localhost", 9000);// 8080, later undel
   connectStorageEmulator(storage, "localhost", 9199);
   connectFunctionsEmulator(functions, "localhost", 5001);
   connectAuthEmulator(auth, "http://localhost:9099", {
