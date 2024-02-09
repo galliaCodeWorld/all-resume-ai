@@ -3,7 +3,7 @@
   "description": "Cloud Functions for Firebase",
   "type": "module",
   "scripts": {
-    "dev": "NODE_OPTIONS='--trace-warnings' && firebase emulators:start",
+    "dev": "firebase emulators:start",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
@@ -15,7 +15,7 @@
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^11.5.0",
-    "firebase-functions": "^4.2.1",
+    "firebase-functions": "^4.7.0",
     "openai": "^3.2.1"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 <script>
+  // import RichTextEditor  from './RichTextEditor.svelte'
   let primaryColor = "#313e50";
   let secondaryColor = "#8fb2e5";
   import { resume } from "../Store";
@@ -50,9 +51,14 @@
             </h2>
           </div>
 
+          <!-- <RichTextEditor /> -->
+
           <div class="p-4 pt-3">
             <ul class="flex flex-col gap-2">
               <li>
+                <p class="text-white uppercase font-semibold !text-sm leading-snug">
+                  {$resume.title || `WORK, HEALTH AND SAFETY COORDINATOR | WHS OFFICER`}
+                </p>
                 <p>
                   <strong>Industry Experience & Knowledge:</strong> Acquired and
                   developed in-depth knowledge and extensive experience within WHS
