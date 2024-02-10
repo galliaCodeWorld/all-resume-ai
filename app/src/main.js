@@ -1,5 +1,6 @@
-import "./style.css";
 import "material-symbols/rounded.css";
+import "./style.css";
+import '@milkdown/theme-nord/style.css'
 
 import App from "./App.svelte";
 

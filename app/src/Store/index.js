@@ -17,5 +17,15 @@ export const resume = writable({
     address: "",
   },
   summary: "",
-  expertise: ""
+  expertise: "",
 });
+export const updateResume= (item)=> {
+  resume.update(items => ({...items, ...item}));
+}
+
+export const template = writable({
+  a: {expertise: `class="flex flex-col gap-2"`},
+  b: {}
+});
+export const focusedTemplate = writable("a");
+

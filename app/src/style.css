@@ -37,3 +37,7 @@ button {
 .material-symbols-rounded.filled {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
+
+.milkdown {
+  @apply bg-slate-50 px-2 py-4 m-5 border rounded;
+}
