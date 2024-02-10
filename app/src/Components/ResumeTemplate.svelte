@@ -145,7 +145,7 @@
     </aside>
   </div>
 
-  <div class="flex justify-between bg-slate-700 mt-4 px-4 py-1 italic">
+  <div class="flex justify-between bg-slate-700 mt-4 px-4 py-1 italic page-break">
     <p class="uppercase text-xs font-bold text-white">RAJESH CHAVAN</p>
     <p class="uppercase text-xs font-bold text-white">PROFESSIONAL RÉSUMÉ</p>
   </div>
@@ -414,5 +414,9 @@
 
   .resume * {
     font-size: 8.4pt;
+  }
+
+  .page-break {
+    margin-top: 25px;
   }
 </style>

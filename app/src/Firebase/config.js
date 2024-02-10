@@ -17,11 +17,7 @@ const app = initializeApp({
   storageBucket: "test-e3349.appspot.com",
   messagingSenderId: "178216443882",
   appId: "1:178216443882:web:351df2912a5bdb604d5c93",
-<<<<<<< HEAD
   measurementId: "G-3S1M1MLXDP"
-=======
-  measurementId: "G-HF3NF37882"
->>>>>>> d5a8b1722218355fb95bce15cf4517668cc8e342
 });
 
 export const auth = getAuth(app);
