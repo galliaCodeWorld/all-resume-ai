@@ -20,6 +20,17 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@friendofsvelte/tipex": "^0.0.1-prev.0.2",
+    "@milkdown/core": "^7.3.3",
+    "@milkdown/ctx": "^7.3.3",
+    "@milkdown/plugin-cursor": "^7.3.3",
+    "@milkdown/plugin-prism": "^7.3.3",
+    "@milkdown/plugin-slash": "^7.3.3",
+    "@milkdown/plugin-tooltip": "^7.3.3",
+    "@milkdown/preset-commonmark": "^7.3.3",
+    "@milkdown/prose": "^7.3.3",
+    "@milkdown/theme-nord": "^7.3.3",
+    "@milkdown/transformer": "^7.3.3",
     "@paypal/paypal-js": "^6.0.0",
     "firebase": "^9.23.0",
     "html2pdf.js": "^0.10.1",

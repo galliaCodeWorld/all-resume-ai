@@ -1,0 +1,1 @@
+export const browser = true; // or whatever mock value makes sense for your project

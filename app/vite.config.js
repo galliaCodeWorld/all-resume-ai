@@ -1,11 +1,25 @@
-import { defineConfig } from "vite";
-import sveltePreprocess from "svelte-preprocess";
-import { svelte, vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from 'vite';
+import sveltePreprocess from 'svelte-preprocess';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
+import path from 'path';
 
 export default defineConfig({
   plugins: [
     svelte({
-      preprocess: [vitePreprocess(), sveltePreprocess({ postcss: true })],
+      preprocess: [sveltePreprocess({ postcss: true })],
     }),
   ],
+  resolve: {
+    alias: {
+      '$app/environment': path.resolve('src/mocks/app-environment.js'),
+    },
+  },
+  optimizeDeps: {
+    exclude: ['@friendofsvelte/tipex'],
+  },
+  build: {
+    rollupOptions: {
+      external: ['$app/environment']
+    }
+  },
 });
