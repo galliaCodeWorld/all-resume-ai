@@ -9,9 +9,11 @@
   // const CLIENT_ID =
   //   "AVnPr2rbx-Fp12BEWW2NJZecDHcx83aAO_vaEAKUogEFk4UqrmN5aqxQO_n0EuM2YMnEV-b1UaK3q1yK";
   
-  // live
-  const CLIENT_ID =
-    "AeTCqW1pVqJVd6TMwArHeIPWo8_PeYmW9IxwLu5KxtvEqNEaMWhHM1ETsx2b_h1JHHdzu8VthSmoYcA8";
+  // developer mode - advanced
+  // const CLIENT_ID = "AeTCqW1pVqJVd6TMwArHeIPWo8_PeYmW9IxwLu5KxtvEqNEaMWhHM1ETsx2b_h1JHHdzu8VthSmoYcA8";
+  
+  // live mode - advanced
+  const CLIENT_ID = "AahhVma9QFWi8IjZks36A3FCYWzVLEIFAXyUItRc4E2BbA8YvUjbkRDkoFUm8VSHlTkC90I64UtYCAOR";
 
   onMount(async () => {
     const paypal = await loadScript({
